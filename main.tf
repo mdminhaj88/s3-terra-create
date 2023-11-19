@@ -5,6 +5,6 @@ provider "aws" {
 
 resource "aws_s3_bucket" "terra-s3" {
   bucket = var.bucket
-  force_destroy = true
+  force_destroy = var.force_destroy
 
 }
